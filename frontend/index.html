@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.customFilters {
+    margin-bottom: 20px;
+}
+
+.customFilters input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.customFilters button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+}
+
+#contactsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contactItem {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contactItem:hover {
+    background-color: #f9f9f9;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Web</h1>
+        <div class="filters">
+            <button id="allChatsBtn">All Chats</button>
+            <button id="unreadChatsBtn">Unread Chats</button>
+            <button id="awaitingReplyBtn">Awaiting Reply</button>
+            <button id="needsReplyBtn">Needs Reply</button>
+        </div>
+        <div class="customFilters">
+            <input type="text" id="filterNameInput" placeholder="Filter Name">
+            <button id="createFilterBtn">Create Filter</button>
+        </div>
+        <ul id="contactsList"></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
